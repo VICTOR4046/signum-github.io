@@ -20,3 +20,13 @@ Three.js is a cross-browser JavaScript library and application programming inter
 <li>open any browser according to your wish and type local adress which you are selected 
 </ul>
 
+
+# Hacktoberfest-It
+## Contribution and Other notes:
+- Commit the code.
+- Mention your name, github handle plus other links in Contributors.md.
+- Code should be written by you.
+- Mention what the code does in the begginning of the file (in form of comments) or in the commit message.
+- To get started with open source contribution and stuff: https://www.digitalocean.com/community/tutorial_series/an-introduction-to-open-source
+- Please maintain the Quality Standards by contributing original work to the open source community.
+
