@@ -1,150 +1,165 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat";
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: black;
   
-font-family: "Lucida Grande";
-
 }
-
-.container {
-  
-width: 1170px;
-
-  padding: 0 15px;
-
-  margin: 0 auto;
-
+@font-face{
+    font-family: 'Playlist-Script';
+    src:url('Playlist Script.otf'),
+        url('Playlist Caps.otf'),
+        url('Playlist Ornament.otf');
+        font-style: normal ;
+        font-weight: 100;
 }
-
-
-.scrapper {
-  padding: 180px 0 100px 0;
-
-  background-image: url(https://www.njea.org/wp-content/uploads/2014/10/Coding.jpg);
-  
-background-size: cover;
-
-  color: white;
-  
-text-align: center;
-
+canvas {
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
 }
-
-.container li {
-  text-align: center;
-  padding: 20px;
-  font-size: 25px;
+ .text-box {
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  color: green;
 }
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
-  cursor: pointer;
-  box-shadow: 0 7px #1a7940;
-}
-
-.message:active {
+.container{
   position: relative;
-  top: 7px;
-  box-shadow: none;
-}
-
-.btn-scrapper {
-  margin: 20px 0;
-}
-
-.btn-scrapper p {
-  margin: 10px 0;
-}
-
-
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
+  top:350;
+  left:20;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 4px;
+  word-spacing: 4px;
 }
 
 header {
-  height: 65px;
   width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  
   position: fixed;
-  top: 0;
-  z-index: 10;
+  z-index: 99;
+}
+.bg-light {
+  background-color: transparent !important;
+}
+.navbar-brand {
+  color: white !important;
+  font-size: 35px;
+  font-weight: bold;
+}
+nav .container {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+.shrink .container {
+  border: none !important;
+}
+ul.navbar-nav li a.nav-link {
+  color: white !important;
+}
+ul.navbar-nav li a.nav-link:hover{
+color: #2d94fc !important;
+}
+ul.navbar-nav li.active a.nav-link {
+  color: #2d94fc !important;
+  transition: all.3s;
+}
+.shrink{
+background: white !important;
+box-shadow: 1px 2px 4px 0px white !important;
+}
+.shrink .navbar-brand {
+  color: white !important;
+}
+.shrink ul.navbar-nav li a.nav-link {
+  color: white !important;
+}
+.shrink ul.navbar-nav li a.nav-link:hover, .shrink ul.navbar-nav li.active a.nav-link  {
+  color: white !important;
+}
+section {
+min-height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+top:650;
+left:40;
+text-align: center;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: 7px;
+word-spacing: 12px;
 }
 
 
-.logo {
-  height: 10px;
-  width: 80px;
-  margin-top: 20px;
+@keyframes scroll-down {
+0% {
+  /* top:20%; */
+  opacity: 0;
 }
-
-.header-left {
-  float: left;
+30% {
+  opacity: 1;
 }
-
-.header-right {
-  float: right;
-  background-color: rgba(255, 255, 255, 0.3);
-  transition: all 0.5s;
+60% {
+  opacity: 1;
 }
-
-.header-right:hover {
-  background-color: rgba(255, 255, 255, 0.5);
+100% {
+  top: 90%;
+  opacity: 0;
 }
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  display: block;
-  color: #fff;
 }
-.header-right a:hover
-{
-  font-color: #69875;
+.heading{
+font-family: 'Playlist-Script';
 }
-
-.scrapper {
-  height: 500px;
-  padding-bottom: 80px;
-  background-color: #f7f7f7;
+.countdown {
+font-family: 'Playlist-Script';
+}
+.navbar-brand {
+font-family: 'Playlist-Script';
+}
+.container1 {
+  
+  width: 1170px;
+  
+    padding: 0 15px;
+  
+    margin: 0 auto;
+  
+  }
+  
+  
+  .scrapper {
+    padding: 180px 0 100px 0;
+  
+    
+  background-size: cover;
+  
+    color: black;
+    
   text-align: center;
-}
-
-.mscrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-footer img {
-  width: 125px;
-}
-
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
-}
-
-footer {
-  padding-top: 30px;
-}
-h2 {
-  font-size: 50px;
-  color: #fff;
-}
-h3 {
-  font-size: 40px;
-  color: #fff;
-}
+  
+  }
+  
+  .container li {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+  }
+  
