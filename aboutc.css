@@ -1,12 +1,146 @@
-body {
-  font-style: Lucida Grande;
-  color: #404040;
-  text-align: center;
-  padding: 100px;
-  background-image: url(https://cdn.wallpapersafari.com/66/82/pKCuAG.png);
-  color: #fff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+html {
+  font-family: "Montserrat";
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: orange;
+  
+}
+@font-face{
+  font-family: 'Playlist-Script';
+  src:url('Playlist Script.otf'),
+      url('Playlist Caps.otf'),
+      url('Playlist Ornament.otf');
+      font-style: normal ;
+      font-weight: 100;
+}
+
 
 .about h1 span {
   color: #FFA500;
 }
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+}
+.bg-light {
+  background-color: transparent !important;
+}
+.navbar-brand {
+  color: white !important;
+  font-size: 35px;
+  font-weight: bold;
+}
+nav .container {
+  border-bottom: 1px solid white;
+  padding-bottom: 10px;
+}
+.shrink .container {
+  border: none !important;
+}
+ul.navbar-nav li a.nav-link {
+  color: white !important;
+}
+ul.navbar-nav li a.nav-link:hover{
+color: #2d94fc !important;
+}
+ul.navbar-nav li.active a.nav-link {
+  color: #2d94fc !important;
+  transition: all.3s;
+}
+.shrink{
+background: white !important;
+box-shadow: 1px 2px 4px 0px white !important;
+}
+.shrink .navbar-brand {
+  color: white !important;
+}
+.shrink ul.navbar-nav li a.nav-link {
+  color: white !important;
+}
+.shrink ul.navbar-nav li a.nav-link:hover, .shrink ul.navbar-nav li.active a.nav-link  {
+  color: white !important;
+}
+section {
+min-height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+top:650;
+left:40;
+text-align: center;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
+letter-spacing: 7px;
+word-spacing: 12px;
+}
+
+
+@keyframes scroll-down {
+0% {
+  /* top:20%; */
+  opacity: 0;
+}
+30% {
+  opacity: 1;
+}
+60% {
+  opacity: 1;
+}
+100% {
+  top: 90%;
+  opacity: 0;
+}
+}
+.heading{
+font-family: 'Playlist-Script';
+}
+.countdown {
+font-family: 'Playlist-Script';
+}
+.navbar-brand {
+font-family: 'Playlist-Script';
+}
+.container1 {
+  
+  width: 1170px;
+  
+    padding: 0 15px;
+  
+    margin: 0 auto;
+  
+  }
+  
+  
+  .scrapper {
+    padding: 180px 0 100px 0;
+  
+    
+  background-size: cover;
+  
+    color: black;
+    
+  text-align: center;
+  
+  }
+  
+  .container li {
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+  }
+  
